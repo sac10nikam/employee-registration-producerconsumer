@@ -12,6 +12,9 @@ import org.springframework.web.bind.annotation.RestController;
 import com.capita.model.Employee;
 import com.capita.source.EmployeeRegistrationSource;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @RestController
 @EnableBinding(EmployeeRegistrationSource.class)
 public class EmployeeRegistrationController {
@@ -23,12 +26,12 @@ public class EmployeeRegistrationController {
 	@ResponseBody
 	public String orderFood(@RequestBody Employee employee) {
 		employeeRegistrationSource.employeeRegistration().send(MessageBuilder.withPayload(employee).build());
-		System.out.println(employee.toString());
+		log.debug(employee.toString());
 		return "Employee Registered";
 	}
 	
 	@StreamListener(target = EmployeeRegistrationSource.EMPLOYEE_REGISTRATION_INPUT)
 	public void processEmployeeRegistrationInput(String msg) {
-		System.out.println(msg);
+		log.debug(msg);
 	}
 }

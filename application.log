@@ -1,0 +1,9 @@
+2019-08-21 11:42:42,253 INFO com.capita.EmployeeRegistrationApplication [main] Starting EmployeeRegistrationApplication on PDCLT01JK9YLQ2 with PID 47656 (C:\PageOne\workspace_poc\POC\employee-registration-producerconsumer\target\classes started by P10481516 in C:\PageOne\workspace_poc\POC\employee-registration-producerconsumer)
+2019-08-21 11:42:42,257 INFO com.capita.EmployeeRegistrationApplication [main] No active profile set, falling back to default profiles: default
+2019-08-21 11:42:46,964 INFO org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+2019-08-21 11:42:46,967 INFO org.apache.catalina.core.StandardEngine [main] Starting Servlet Engine: Apache Tomcat/8.5.23
+2019-08-21 11:42:47,258 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2019-08-21 11:42:53,398 INFO com.capita.EmployeeRegistrationApplication [main] No active profile set, falling back to default profiles: default
+2019-08-21 11:42:53,796 INFO com.capita.EmployeeRegistrationApplication [main] Started EmployeeRegistrationApplication in 0.512 seconds (JVM running for 13.269)
+2019-08-21 11:42:54,581 INFO com.capita.EmployeeRegistrationApplication [main] Started EmployeeRegistrationApplication in 12.981 seconds (JVM running for 14.054)
+2019-08-21 11:42:55,442 INFO org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring FrameworkServlet 'dispatcherServlet'

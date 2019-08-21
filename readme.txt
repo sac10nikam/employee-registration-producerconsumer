@@ -18,3 +18,7 @@ Used Spring cloud stream instead of Spring RabbitMQ
 Simple Spring Boot service
 Not yet used design patterns and best practices
 Fault Tolerance/Exception handling is in progress
+
+Lombok:
+Install lombok plugin in Eclipse/STS/Intellij
+https://www.baeldung.com/lombok-ide

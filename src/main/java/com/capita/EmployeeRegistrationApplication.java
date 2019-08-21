@@ -8,6 +8,9 @@ import org.springframework.cloud.stream.messaging.Sink;
 
 import com.capita.source.EmployeeRegistrationSource;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 @EnableBinding({Sink.class, EmployeeRegistrationSource.class})
 @SpringBootApplication
 public class EmployeeRegistrationApplication {
@@ -18,11 +21,11 @@ public class EmployeeRegistrationApplication {
 	
 	@StreamListener(target = Sink.INPUT)
 	public void processRegisterEmployees(String employee) {
-		System.out.println("Employees Registered by Client " + employee);
+		log.debug("Employees Registered by Client " + employee);
 	}
 	
 	@StreamListener(target = EmployeeRegistrationSource.EMPLOYEE_REGISTRATION_INPUT)
 	public void processRegisterEmployeesWithoutSink(String employee) {
-		System.out.println("Employees Registered by Client " + employee);
+		log.debug("Employees Registered by Client " + employee);
 	}
 }

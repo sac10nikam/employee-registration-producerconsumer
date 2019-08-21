@@ -1,32 +1,13 @@
 package com.capita.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 
-@JsonIgnoreProperties(ignoreUnknown = true)
+@Getter
+@Setter
+@ToString
 public class Employee {
-
 	private String empName;
 	private String empID;
-
-	public String getEmpName() {
-		return empName;
-	}
-
-	public void setEmpName(String empName) {
-		this.empName = empName;
-	}
-
-	public String getEmpID() {
-		return empID;
-	}
-
-	public void setEmpID(String empID) {
-		this.empID = empID;
-	}
-
-	@Override
-	public String toString() {
-		return "Employee [empName=" + empName + ", empID=" + empID + "]";
-	}
-
 }
