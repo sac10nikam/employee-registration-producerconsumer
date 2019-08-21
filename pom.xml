@@ -5,11 +5,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.company</groupId>
-	<artifactId>employee-registration-producerconsumer</artifactId>
+	<artifactId>employee-producer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>employee-registration-producer</name>
+	<name>employee-producer</name>
 	<description>Demo project for Spring Cloud Stream publishing</description>
 
 	<parent>
