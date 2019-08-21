@@ -1,4 +1,4 @@
-package com.capita.model;
+package com.company.model;
 
 import lombok.Getter;
 import lombok.Setter;

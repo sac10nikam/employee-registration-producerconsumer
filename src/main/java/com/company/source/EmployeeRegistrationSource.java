@@ -1,4 +1,4 @@
-package com.capita.source;
+package com.company.source;
 
 import org.springframework.cloud.stream.annotation.Input;
 import org.springframework.cloud.stream.annotation.Output;
